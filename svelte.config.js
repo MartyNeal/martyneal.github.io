@@ -6,6 +6,7 @@ const dev = process.argv.includes('dev');
 const config = {
 	kit: {
 		adapter: adapter({
+			fallback: 'index.html',
 			pages: 'build/',
 		}),
 		paths: {
