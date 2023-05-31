@@ -3,7 +3,7 @@ import adapter from '@sveltejs/adapter-static';
 const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
-export const config = {
+const config = {
 	kit: {
 		adapter: adapter({
 			pages: 'build/',
@@ -13,3 +13,5 @@ export const config = {
 		}
 	}
 };
+
+export default config;
